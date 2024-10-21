@@ -1,4 +1,4 @@
-# _"Essential Programming in Python"_
+# ![UW logo](UW2.png) _"Essential Programming in Python"_
 
 School assignments from the 2024 Fall quarter of the Python certificate from the University of Washington.
 
