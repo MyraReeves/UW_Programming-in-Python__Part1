@@ -2,19 +2,9 @@
 
 ## Objectives
 
-In this assignment we will develop an application that captures data
-for use in a Python program.
+In this assignment we will develop an application that captures data for use in a Python program.
 
-## Instructions
-
-1. Start by reviewing the problem described below.
-1. When you are familiar with the requirements, start to plan how you
-will write the Python code.
-1. As you write the code be sure to test it frequently.
-1. Submit your complete assignment when you are sure you have implemented
-all of the requirements.
-
-### Basics
+## Basics
 
 Let’s build an automated interviewer! The purpose of this Python program is to operate in a welcome booth at the Seattle Python Users conference. All delegates will be expected to line up at one of the many terminals and enter their details into the program you are going to write.
 

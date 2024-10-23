@@ -9,7 +9,7 @@ In this assignment you will learn how to store data and also retrieve data from 
 We need to be able to add features to an app to save and load data in a shareable format.
 In order to do that, we'll be leveraging [CSV files](https://www.howtogeek.com/348960/what-is-a-csv-file-and-how-do-i-open-it/) with headers.
 
-1. Create a file in a text editor called `questions.csv` that stores the following header and questions. Feel free to add more fields and questions.
+1. Create a file in a text editor called `questions.csv` that stores the following header and questions.
 
     ```csv
     question_id,question
@@ -24,7 +24,7 @@ In order to do that, we'll be leveraging [CSV files](https://www.howtogeek.com/3
     1. Generates a unique integer id for that question
     1. Appends the new question back into the file
 
-1. Create a file in a text editor called `answers.csv` that stores the following header and questions. Notice that `interviewee` is the same because we are linking it to a set of answers to a user, and the `question_id` field links our answer to a question. Feel free to add more fields and answers.
+1. Create a file in a text editor called `answers.csv` that stores the following header and questions. Notice that `interviewee` is the same because we are linking it to a set of answers to a user, and the `question_id` field links our answer to a question.
 
     ```csv
     interviewee,question_id,answer
