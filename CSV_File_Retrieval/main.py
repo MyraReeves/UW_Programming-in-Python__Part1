@@ -85,3 +85,53 @@ with open('answers.csv', 'a') as requested_file:
     requested_file.write(new_answer)
 
 print('✔️ Your answer has been recorded')
+
+
+#####################################################################################
+# Create a python program that prints both questions and answers from the csv files #
+#####################################################################################
+
+# Stores all questions from the questions.csv file, including the newly added one:
+questions_updated_list = []
+with open('questions.csv', 'r') as file:
+    questions = file.read()         # Stores contents of csv file
+    questions = questions.split('\n')   # Turns the result into a list
+    questions = questions[1:]           # Removes header row
+    for i in questions:
+        separate = i.split(',')         # Separates the contents into new indexes based upon position relative to comma
+        questions_updated_list.append([separate[0], separate[-1], ''])
+
+
+# Stores all answers from the answers.csv file, including the newly answered one:
+answers_updated_list = []
+with open('answers.csv', 'r') as file:
+    answers = file.read()
+    answers = answers.split('\n')  # Turns the result into a list
+    answers = answers[1:]  # Removes header row
+    for i in answers:
+        separate = i.split(',')  # Separates the contents into new indexes based upon position relative to comma
+        answers_updated_list.append([separate[0], separate[1], separate[2]])
+
+# Prints out the questions, one at a time, along with the corresponding set of answers from all interviewees.
+print('\n🟡 🟢 🟡 🟢 🟡 🟢 🟡 🟢 🟡 🟢 🟡 🟢 🟡'
+      '\nSummary:')
+
+combined = []
+combined.append(questions_updated_list)
+combined.append(answers_updated_list)
+
+remaining = len(answers_updated_list)
+
+id_index = 0
+interviewee_index = 0
+
+for each in combined:
+    while remaining > 0:
+        print(f'Question ID: {combined[0][id_index][0]} '
+              f'\n{combined[0][id_index][1]} '
+              f'\n{combined[1][interviewee_index][0]} answered with: '
+              f'\n{combined[1][interviewee_index][2]} \n')
+        id_index += 1
+        interviewee_index += 1
+        remaining -= 1
+        
