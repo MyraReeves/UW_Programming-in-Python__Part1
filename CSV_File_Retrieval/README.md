@@ -2,7 +2,7 @@
 
 ## Objectives
 
-In this assignment you will learn how to store data, and also retrieve data.
+In this assignment you will learn how to store data and also retrieve data from CSV files.
 
 ## Basics
 
