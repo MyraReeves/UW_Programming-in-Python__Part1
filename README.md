@@ -4,8 +4,8 @@ School assignments from the 2024 Fall quarter of the [Python certificate from th
 
 1. [**Automated Interviewer**](AutomatedInterviewer/)
 
- ㅤ. ◻️ Example of a program inside a conference welcome booth. To check in, arriving delegates would line up at one of the many terminals to enter their details.
+ ㅤ. ◻️ Example of a program inside a conference welcome booth. To check in, arriving delegates would line up at a terminal to enter their details.
 
-2. **CSV File Retrieval**
+2. [**CSV File Retrieval**](CSV_File_Retrieval)
 
  ㅤ. ◻️ Leverages CSV files to store and retrieve data.
