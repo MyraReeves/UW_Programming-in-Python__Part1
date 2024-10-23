@@ -41,3 +41,47 @@ with open('questions.csv', 'a') as csv_file:
     csv_file.write(new_question)
 
 print('✔️ Your question has been added to the questions file')
+
+
+#####################################################################
+# Create a python program that adds answers to the answers.csv file #
+#####################################################################
+
+# The program starts by reading all the answers in the answers.csv file and storing them in a variable:
+answers_content = []
+with open('answers.csv', 'r') as requested_file:
+    answers = requested_file.read()
+    answers = answers.split('\n')  # Turns the result into a list
+    answers = answers[1:]  # Removes header row
+    for i in answers:
+        separate = i.split(',')  # Separates the contents into new indexes based upon position relative to comma
+        answers_content.append([separate[0], separate[1], separate[-1]])  # Creates nested list with question id marked as integers
+
+# Asks the interviewee for their name.
+interviewee = input("\nWhat is your name?: \t")
+
+# Prints the previously-existing questions and answers:
+number = 1                      # Different than id!
+question_counter = 0
+answer_counter = 0
+print(f'\n{interviewee}, you were previously asked: ')
+for each_question in questions_content:
+    print(f'{number}. {questions_content[question_counter][1]}')
+    question_counter += 1
+    number += 1
+number = 1                      # Needed to be reset so that answer numbers correspond to question numbers
+for each_previously_existing_answer in answers_content:
+    print(f'➡️ You answered with: {number}. {answers_content[answer_counter][2]}')
+    answer_counter += 1
+    number += 1
+
+# Prompts the user to answer the newly added question
+new_answer = input('\n' + new_question + '\t')
+
+# Once all questions have been answered, append those answers back out into the answers.csv file
+with open('answers.csv', 'a') as requested_file:
+    requested_file.write('\n'+interviewee+",")
+    requested_file.write(str(new_id)+",")
+    requested_file.write(new_answer)
+
+print('✔️ Your answer has been recorded')
