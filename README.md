@@ -12,4 +12,10 @@ School assignments from the 2024 Fall quarter of the [Python certificate from th
 
 3. [**Storing Interview Answers**](Storing_Answers)
 
+4. [**Validating Answers**](Validating_Answers)
+
 5. [**Mailroom**](Mailroom)
+
+6. [**HR System**](HR_System)
+
+7. [**Booking System**](Booking_system)
