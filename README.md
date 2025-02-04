@@ -9,3 +9,7 @@ School assignments from the 2024 Fall quarter of the [Python certificate from th
 2. [**CSV File Retrieval**](CSV_File_Retrieval)
 
  ㅤ. ◻️ Leverages CSV files to store and retrieve data.
+
+3. [**Storing Interview Answers**](Storing_Answers)
+
+5. [**Mailroom**](Mailroom)
